@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Breakpoint test</title>
+
+  <style>
+
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    @media (orientation: landscape) {
+      body {
+        background: red;
+      }
+
+      .landscape {
+        display: block;
+      }
+
+      .portrait {
+        display: none;
+      }
+    }
+
+    @media (orientation: portrait) {
+      body {
+        background: blue;
+      }
+
+      .landscape {
+        display: none;
+      }
+
+      .portrait {
+        display: block;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <input type="text">
+  <p class="portrait">I'm in portrait</p>
+  <p class="landscape">I'm in landscape</p>
+</body>
+</html>
